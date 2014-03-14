@@ -1,0 +1,24 @@
+{
+  "name": "ember-test-examples",
+  "version": "0.0.0",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.4.0",
+    "ember-data": "~0.0.14",
+    "qunit": "~1.14.0",
+    "jquery": "~2.1.0",
+    "ember-qunit": "git@github.com:rpflorence/ember-qunit.git#master",
+    "ember-localstorage-adapter": "~0.2.0"
+  }
+}

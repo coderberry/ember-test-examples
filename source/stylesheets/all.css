@@ -1,0 +1,14 @@
+/*
+ *= require ../javascripts/vendor/qunit/qunit/qunit.css
+ *= require_self
+ */
+
+body {
+  padding: 20px;
+}
+
+#ember-testing-container {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px dotted #d0d0d0;
+}
