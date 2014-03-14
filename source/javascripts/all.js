@@ -1,4 +1,4 @@
-//= require ./vendor/jquery/dist/jquery.js
+//= require ./vendor/jquery/jquery.js
 //= require ./vendor/handlebars/handlebars.js
 //= require ./vendor/ember/ember.js
 //= require ./vendor/ember-data/ember-data.js

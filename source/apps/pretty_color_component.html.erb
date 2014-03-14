@@ -1,0 +1,23 @@
+---
+title: "Component: Pretty Color"
+javascripts: pretty_color_component
+jsbin: http://emberjs.jsbin.com/decod/1/edit
+---
+
+<script type="text/x-handlebars">
+  <h2> Welcome to Ember.js</h2>
+
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  <ul>
+  {{#each item in model}}
+    <li>{{pretty-color name=item}}</li>
+  {{/each}}
+  </ul>
+</script>
+
+<script type="text/x-handlebars" data-template-name="components/pretty-color">
+  Pretty Color: {{name}}
+</script>

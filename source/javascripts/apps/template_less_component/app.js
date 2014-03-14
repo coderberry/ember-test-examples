@@ -11,3 +11,8 @@ App.IndexRoute = Ember.Route.extend({
     return ['red', 'yellow', 'blue'];
   }
 });
+
+App.TemplateLessComponent = Ember.Component.extend({
+  classNames: ['look-ma-no-template'],
+  tagName: ['span']
+});
