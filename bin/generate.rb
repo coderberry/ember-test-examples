@@ -39,6 +39,7 @@ test('/', function() {
 ---
 title: #{@app_title}
 javascripts: #{@app_name}
+jsbin: #{@jsbin}
 ---
 
 <script type="text/x-handlebars">

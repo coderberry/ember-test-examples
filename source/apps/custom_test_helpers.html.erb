@@ -1,0 +1,16 @@
+---
+title: Custom Test Helpers
+javascripts: custom_test_helpers
+jsbin: http://jsbin.com/yiven/2/edit
+---
+
+<script type="text/x-handlebars">
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  Double Clicks: <span id="double-clicks">{{doubleClicks}}</span>
+  <br/>
+  <br/>
+  <a href="#" class="btn" {{action "addDblClick" on="doubleClick"}}>Double Click Me</a>
+</script>

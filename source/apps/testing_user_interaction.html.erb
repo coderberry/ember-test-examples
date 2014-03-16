@@ -1,0 +1,29 @@
+---
+title: Testing User Interaction
+javascripts: testing_user_interaction
+jsbin: http://jsbin.com/yokiy/2/edit
+---
+
+<script type="text/x-handlebars">
+  <h2>My Blog</h2>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="posts">
+  {{#link-to 'posts.new' class="new-post"}}Add Post{{/link-to}}
+  <ul>
+  {{#each post in model}}
+    <li>{{post.title}}</li>
+  {{/each}}
+  </ul>
+
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="posts/new">
+  <form {{action "addPost" on="submit"}}>
+    {{input rel="newTitle" value=newTitle placeholder="title"}}
+    {{input rel="newBody" value=newBody placeholder="body"}}
+    <button type="submit" class="submit">Submit</button>
+  </form>
+</script>
