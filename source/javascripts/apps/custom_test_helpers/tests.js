@@ -12,10 +12,7 @@ Ember.Test.registerHelper('shouldHaveText',
 // register custom async helper
 Ember.Test.registerAsyncHelper('dblclick', 
   function(app, selector, context) {
-    var $el = findWithAssert(selector, context);
-    Ember.run(function() {
-      $el.dblclick();
-    });
+    triggerEvent(selector, 'dblclick');
   }
 );
 

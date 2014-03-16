@@ -7,6 +7,14 @@
     <title><%= current_page.data.title || "Ember Test Examples" %></title>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
     <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.2.1.js"></script>
+    <script src="http://builds.emberjs.com/beta/ember.js"></script>
+    <script src="http://builds.emberjs.com/beta/ember-data.js"></script>
+    <script src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+    <script src="https://rawgithub.com/rpflorence/ember-qunit/master/dist/globals/main.js"></script>
+
     <style>
       body{ padding: 20px; }
     </style>
@@ -24,13 +32,6 @@
     </div>
 
     <%= yield %>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.2.1.js"></script>
-    <script src="http://builds.emberjs.com/tags/v1.4.0/ember.js"></script>
-    <script src="http://builds.emberjs.com/beta/ember-data.js"></script>
-    <script src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
-    <script src="https://rawgithub.com/rpflorence/ember-qunit/master/dist/globals/main.js"></script>
 
     <%= javascript_include_tag "apps/#{current_page.data.javascripts}/app",
                                "shared/integration_setup",
