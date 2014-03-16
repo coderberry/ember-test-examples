@@ -1,0 +1,19 @@
+---
+title: Unit Testing Controllers
+javascripts: unit_testing_controllers
+jsbin: http://jsbin.com/gahoy/4/edit
+---
+
+<script type="text/x-handlebars">
+  <h2>Javascript Books</h2>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  {{input type="search" value=searchText placeholder="Filter..."}}
+  <ul>
+  {{#each book in filteredBooks}}
+    <li>{{book.title}} by {{book.author}}</li>
+  {{/each}}
+  </ul>
+</script>
