@@ -1,0 +1,28 @@
+---
+title: Unit Testing Routes
+javascripts: unit_testing_routes
+jsbin: 
+---
+
+<script type="text/x-handlebars">
+  {{#link-to 'index'}}Home{{/link-to}}
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'contact'}}Contact{{/link-to}}
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+  <h1>Home</h1>
+  <button {{action "displayAlert" text}}>Trigger Alert</button>
+</script>
+
+<script type="text/x-handlebars" data-template-name="about">
+  <h1>About</h1>
+  <button {{action "displayAlert" text}}>Trigger Alert</button>
+</script>
+
+
+<script type="text/x-handlebars" data-template-name="contact">
+  <h1>Contact</h1>
+  <button {{action "displayAlert" text}}>Trigger Alert</button>
+</script>
